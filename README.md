@@ -16,7 +16,12 @@ A flexible gesture motion controller for IoT devices, created for MakeUofT 2020.
 
 ## Images
 
-![TBD]()
+**Qualcomm DragonBoard**
+![Qualcomm DragonBoard](https://github.com/a-gratton/Rune/blob/master/images/DragonBoard.jpeg)
+
+**NodeMCU and IMU**
+![NodeMCU and IMU](https://github.com/a-gratton/Rune/blob/master/images/NodeMCU.jpeg)
+
 
 
 ## Architecture
