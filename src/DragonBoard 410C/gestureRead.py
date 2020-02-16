@@ -19,11 +19,12 @@ def connect(client, userdata, flags, rc):
     
     # sub to topic
     client.subscribe(topic)
-    
+    fout = open(r"data","w")
+
 def on_message(client, userdata, msg):     
     if msg.payload == 'end':
         if len(gesture.data) > MIN_LENGTH:
-            pass
+            fout.writelines(L for L in gesture_data)
             #call tensorflow function with np.array(gesture_data)
         else:
             pass
