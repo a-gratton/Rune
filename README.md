@@ -19,13 +19,13 @@ This project was built collaboratively with [Felix Yang](https://github.com/Yang
 
 ## Project Design
 
-# Gesture Sensing Unit
+### Gesture Sensing Unit
 Movement is detected through the the ESP32 development board and the IMU. When the user presses an onboard button, the movement data is transfered to the ESP32 using I2C. This data is then parsed into a single string and published as an MQTT message to the DragonBoard broker. Position values are submitted every 25ms until the button is released.
 
-# Networking
+### Networking
 The DragonBoard acts as the broker for MQTT communication. Messages which are published from the sensing unit are recieved by the board, where they can then be interpreted by the subscribed client computer running our machine learning algorithim. The entire networking system is built on Debian Linux and runs natively; no external connections are required between any modulue of the project.
 
-# Gesture Determination
+### Gesture Determination
 Gestures are classified into 10 types by a machine learning model: positive and neagative movement along each cartesian axis, CW/CCW  complete rotations, and CW/CCW half rotations. A Python script is used to parse data from the MQTT broker and submit it into the model. The model was trained duing the event using data gathered from the gesture sensing unit, allowing precise compensation for inherant sensor defects. 
 
 ## Potential Expansions
