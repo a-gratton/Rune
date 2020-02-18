@@ -37,11 +37,12 @@ Gestures are classified into 10 types by a machine learning model: positive and 
 
 ## Images
 
+**Gesture Sensing Unit**
+![NodeMCU and IMU](https://github.com/a-gratton/Rune/blob/master/images/ESP32.jpeg)
+
 **Qualcomm DragonBoard**
 ![Qualcomm DragonBoard](https://github.com/a-gratton/Rune/blob/master/images/DragonBoard.jpeg)
 
-**NodeMCU and IMU**
-![NodeMCU and IMU](https://github.com/a-gratton/Rune/blob/master/images/NodeMCU.jpeg)
 
 
 
